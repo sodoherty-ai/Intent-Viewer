@@ -17,9 +17,12 @@
 		64B8E70A25EC8F1500220855 /* IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8E70925EC8F1500220855 /* IntentData.swift */; };
 		64E31E9E25EBBD32001B66F6 /* IntentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E31E9D25EBBD32001B66F6 /* IntentsController.swift */; };
 		64E31EA125EBC345001B66F6 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E31EA025EBC345001B66F6 /* K.swift */; };
+		F5589F5F790F588610A3EE2B /* Pods_Intent_Viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80933C03B25189169F26ADD6 /* Pods_Intent_Viewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FB45B72B5A9164D7031894F /* Pods-Intent Viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intent Viewer.debug.xcconfig"; path = "Target Support Files/Pods-Intent Viewer/Pods-Intent Viewer.debug.xcconfig"; sourceTree = "<group>"; };
+		44D4634846245F3406663F62 /* Pods-Intent Viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intent Viewer.release.xcconfig"; path = "Target Support Files/Pods-Intent Viewer/Pods-Intent Viewer.release.xcconfig"; sourceTree = "<group>"; };
 		6496002325EBB9F000DC40F8 /* Intent Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intent Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6496002625EBB9F000DC40F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6496002825EBB9F000DC40F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		64B8E70925EC8F1500220855 /* IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentData.swift; sourceTree = "<group>"; };
 		64E31E9D25EBBD32001B66F6 /* IntentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentsController.swift; sourceTree = "<group>"; };
 		64E31EA025EBC345001B66F6 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		80933C03B25189169F26ADD6 /* Pods_Intent_Viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intent_Viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5589F5F790F588610A3EE2B /* Pods_Intent_Viewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D6964B8F52428D9116F7B02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FB45B72B5A9164D7031894F /* Pods-Intent Viewer.debug.xcconfig */,
+				44D4634846245F3406663F62 /* Pods-Intent Viewer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F32A25E9ED50A221E88A8D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80933C03B25189169F26ADD6 /* Pods_Intent_Viewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6496001A25EBB9F000DC40F8 = {
 			isa = PBXGroup;
 			children = (
 				6496002525EBB9F000DC40F8 /* Intent Viewer */,
 				6496002425EBB9F000DC40F8 /* Products */,
+				4D6964B8F52428D9116F7B02 /* Pods */,
+				5F32A25E9ED50A221E88A8D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +147,7 @@
 				6496001F25EBB9F000DC40F8 /* Sources */,
 				6496002025EBB9F000DC40F8 /* Frameworks */,
 				6496002125EBB9F000DC40F8 /* Resources */,
+				0415268016B18DF692439B89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +204,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0415268016B18DF692439B89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intent Viewer/Pods-Intent Viewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intent Viewer/Pods-Intent Viewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intent Viewer/Pods-Intent Viewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3A630F5F5B78348D3DABA004 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,6 +400,7 @@
 		};
 		6496003825EBB9F100DC40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB45B72B5A9164D7031894F /* Pods-Intent Viewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -376,6 +420,7 @@
 		};
 		6496003925EBB9F100DC40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D4634846245F3406663F62 /* Pods-Intent Viewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
